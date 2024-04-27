@@ -12,8 +12,14 @@ def createFolder(folder_name):
     os.mkdir(path)
     print('New folder made.')
 
+def findFolder(folder_name):
+    print('This is the folder name')
+
+
 def moveFiles(origin , destination):
     # the goal of this is to move the object that is stated to the location that is stated
+
+
     print('Completed Move')
 
 def generateTree():
@@ -40,8 +46,7 @@ def handleCommand(command):
             if(os.path.exists(file_path) != 1):
                 return
             else:
-                # check if the folder exists 
-                print()
+                print('The file does not exist.')
         case "exit": 
             exit
 
